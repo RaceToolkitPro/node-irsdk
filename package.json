@@ -5,7 +5,7 @@
   "main": "src/node-irsdk.js",
   "scripts": {
     "install": "prebuild-install || node-gyp rebuild",
-    "prebuild": "prebuild --all --strip",
+    "prebuild": "prebuild --all",
     "prebuild-upload": "prebuild --all --strip -u %GH_TOKEN%",
     "test": "npm run lint && npm run mocha",
     "mocha": "mocha src/**/*-spec.js",
@@ -21,11 +21,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/apihlaja/node-irsdk.git"
+    "url": "https://github.com/RaceToolkitPro/node-irsdk.git"
   },
   "dependencies": {
     "js-yaml": "4.*",
     "nan": "2.14.2",
+    "node-abi": "^2.19.3",
     "prebuild-install": "^6.0.0"
   },
   "devDependencies": {
